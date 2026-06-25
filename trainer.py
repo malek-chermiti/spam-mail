@@ -21,10 +21,6 @@ print("Le modèle va apprendre les probabilités...")
 model.fit(X_train, y_train)
 
 print("Modèle entraîné !")
-print("Le modèle a appris :")
-print(f"├── P(spam) = {model.class_prior_[1]:.2f}")
-print(f"└── P(ham)  = {model.class_prior_[0]:.2f}")
-
 # ÉTAPE 4 : Évaluer le modèle
 y_pred = model.predict(X_test)
 
