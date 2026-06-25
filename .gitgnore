@@ -1,0 +1,35 @@
+# Fichiers générés par le projet
+data_clean.csv
+vectorizer.pkl
+data_split.pkl
+spam_model.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+
+# Environnement virtuel
+venv/
+env/
+.env
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Dataset (optionnel, décommente si tu veux l'ignorer)
+# SMSSpamCollection.txt
