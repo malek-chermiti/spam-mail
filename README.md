@@ -1,28 +1,28 @@
 # Spam Mail Classifier
 
-Ce projet impl�mente un classificateur de SMS pour d�tecter le spam � partir du jeu de donn�es `SMSSpamCollection.txt`.
+Ce projet implemente un classificateur de SMS pour detecter le spam e partir du jeu de donnees `SMSSpamCollection.txt`.
 
 ## Structure du projet
 
 - `SMSSpamCollection.txt` : dataset original avec les labels `spam` et `ham`
 - `import.py` : lecture du dataset, conversion des labels, application de TF-IDF et sauvegarde des vecteurs
-- `converter.py` : chargement des vecteurs, pr�paration des donn�es et sauvegarde du jeu train/test
-- `trainer.py` : entra�nement du mod�le Naive Bayes et �valuation sur les donn�es de test
-- `test.py` : test d'un message individuel avec le mod�le entra�n�
-- `data_clean.csv` : dataset nettoy� sauvegard� par `import.py`
-- `X_vectors.pkl` : vecteurs TF-IDF sauvegard�s par `import.py`
-- `data_split.pkl` : donn�es split train/test sauvegard�es par `converter.py`
-- `vectorizer.pkl` : vectoriseur TF-IDF sauvegard� pour pr�dire de nouveaux messages
-- `spam_model.pkl` : mod�le Naive Bayes entra�n� sauvegard� par `trainer.py`
+- `converter.py` : chargement des vecteurs, preparation des donnees et sauvegarde du jeu train/test
+- `trainer.py` : entraenement du modele Naive Bayes et evaluation sur les donnees de test
+- `test.py` : test d'un message individuel avec le modele entraene
+- `data_clean.csv` : dataset nettoye sauvegarde par `import.py`
+- `X_vectors.pkl` : vecteurs TF-IDF sauvegardes par `import.py`
+- `data_split.pkl` : donnees split train/test sauvegardees par `converter.py`
+- `vectorizer.pkl` : vectoriseur TF-IDF sauvegarde pour predire de nouveaux messages
+- `spam_model.pkl` : modele Naive Bayes entraene sauvegarde par `trainer.py`
 
-## Pr�requis
+## Prerequis
 
 - Python 3.x
 - Packages Python : `pandas`, `scikit-learn`, `joblib`
 
 ## Installation
 
-Installez les d�pendances avec pip :
+Installez les dependances avec pip :
 
 ```powershell
 pip install pandas scikit-learn joblib
@@ -30,19 +30,19 @@ pip install pandas scikit-learn joblib
 
 ## Usage
 
-1. Pr�parer les donn�es et g�n�rer les vecteurs :
+1. Preparer les donnees et generer les vecteurs :
 
 ```powershell
 python import.py
 ```
 
-2. Diviser les donn�es en train/test :
+2. Diviser les donnees en train/test :
 
 ```powershell
 python converter.py
 ```
 
-3. Entra�ner le mod�le et �valuer :
+3. Entraener le modele et evaluer :
 
 ```powershell
 python trainer.py
@@ -63,14 +63,14 @@ python interface.py
 ## Personnalisation
 
 - Modifiez le message dans `test.py` pour tester un autre SMS.
-- Si vous d�placez le projet, mettez � jour les chemins absolus dans les scripts ou adaptez-les en chemins relatifs.
+- Si vous deplacez le projet, mettez e jour les chemins absolus dans les scripts ou adaptez-les en chemins relatifs.
 
-## R�sultat attendu
+## Resultat attendu
 
-- `spam_model.pkl` : mod�le entra�n�
+- `spam_model.pkl` : modele entraene
 - `vectorizer.pkl` : transformateur TF-IDF
-- `data_clean.csv`, `X_vectors.pkl`, `data_split.pkl` : donn�es pr�par�es
+- `data_clean.csv`, `X_vectors.pkl`, `data_split.pkl` : donnees preparees
 
-## � propos
+## e propos
 
-Ce projet est un exemple simple de pipeline de classification de spam. Il illustre la pr�paration de donn�es, la vectorisation TF-IDF, la division train/test et l'entra�nement d'un mod�le Naive Bayes.
+Ce projet est un exemple simple de pipeline de classification de spam. Il illustre la preparation de donnees, la vectorisation TF-IDF, la division train/test et l'entraenement d'un modele Naive Bayes.
